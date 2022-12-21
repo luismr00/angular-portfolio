@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Linden+Hill&display=swap');
+
+body {
+    background-color: #181818;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    /* color: white; */
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+}
+
+p, h3 {
+    font-family: 'Linden Hill', serif;
+}
+
+
+

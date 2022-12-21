@@ -1,0 +1,155 @@
+.intro {
+    /* background-color: #181818; */
+    height: 100vh;
+}
+
+.about {
+    /* background-color: #181818; */
+    height: 100vh;
+    color: white;
+}
+
+.skills {
+    /* background-color: #181818; */
+    height: 100vh;
+    color: white;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-top: 100px;
+    color: white;
+    height: 500px;
+    /* justify-content: space-evenly; */
+    /* height: 80vh; */
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot, .intro-text {
+    /* flex-grow: 1; */
+    flex: 1 1 0px;
+}
+
+.headshot {
+    display: flex;
+    justify-content: center;
+    /* padding-right: 80px; */
+    width: 350px;
+    height: 350px;
+}
+
+.intro-text p {
+    font-size: 25px;
+}
+
+.intro-text h1 {
+    font-size: 92px;
+    display: inline-block;
+    margin: -15px 0;
+}
+
+/* About */
+
+hr {
+    width: 80px;
+    display: inline-block;
+    margin: 0 15px 4px 15px;
+}
+
+/* .content-header p { 
+    font-family: Arial; 
+    letter-spacing: -2px;
+}
+
+p span {
+    letter-spacing: 2px; 
+    margin: 0 5px; 
+}
+
+span {
+    font-size: 22px;
+} */
+
+.content-header {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 21px;
+}
+
+.content-header h3 {
+    display: inline-block;
+}
+
+.about-description {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text, .about-image {
+    flex: 1 1 0px;
+    font-size: 18px;
+}
+
+.about-text {
+    background: #1E1E1E;
+    display: flex;
+    align-items: center;
+}
+
+.about-text p {
+    padding: 40px;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image-1 {
+    width: 512px;
+    height: 345px;
+}
+
+.about-image-2 {
+    width: 497px;
+    height: 374px;
+}
+
+.about-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Skills */
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100vh;
+    color:white;
+    background: #0d0c2d;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.skill-container {
+    background: #0d0c2d;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin: auto 0;
+    box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+              4px 4px 6px rgba(94, 104, 121, 0.288);
+}
