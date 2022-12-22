@@ -40,7 +40,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       // innerStrokeColor: "#C7E596",
       // animationDuration: 300,
 
-      radius: 60,
+      radius: 75,
       space: -10,
       outerStrokeGradient: true,
       outerStrokeWidth: 10,
