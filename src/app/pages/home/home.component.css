@@ -5,7 +5,7 @@
 
 .about {
     /* background-color: #181818; */
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -42,6 +42,10 @@
     /* padding-right: 80px; */
     width: 350px;
     height: 350px;
+}
+
+.headshot img {
+    border-radius: 50%;
 }
 
 .intro-text p {
@@ -89,6 +93,7 @@ span {
 .about-description {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-text, .about-image {
@@ -100,6 +105,7 @@ span {
     background: #1E1E1E;
     display: flex;
     align-items: center;
+    width: 500px;
 }
 
 .about-text p {
@@ -111,13 +117,13 @@ span {
 }
 
 .about-image-1 {
-    width: 512px;
+    width: 500px;
     height: 345px;
 }
 
 .about-image-2 {
-    width: 497px;
-    height: 374px;
+    width: 500px;
+    height: 345px;
 }
 
 .about-left {
@@ -131,3 +137,9 @@ span {
 }
 
 /* Skills */
+
+.skill-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
