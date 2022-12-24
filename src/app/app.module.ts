@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { StatsComponent } from './components/stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     WorkComponent,
     ContactComponent,
     HeaderComponent,
-    SkillsComponent
+    SkillsComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,13 +42,13 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       // innerStrokeColor: "#C7E596",
       // animationDuration: 300,
 
-      radius: 75,
+      radius: 100,
       space: -10,
       outerStrokeGradient: true,
       outerStrokeWidth: 10,
-      outerStrokeColor: "#4882c2",
-      outerStrokeGradientStopColor: "#53a9ff",
-      innerStrokeColor: "#e7e8ea",
+      outerStrokeColor: "#43A800",
+      outerStrokeGradientStopColor: "#4FC200",
+      innerStrokeColor: "#53CF00",
       innerStrokeWidth: 10,
       // title: "auto",
       // subtitle: "Percent",

@@ -1,5 +1,7 @@
 export interface Skill {
+    id: number,
     percent: number;
-    language: string;
+    specialty: string;
     mastery: string;
+    // [languages:number]:string;
 }

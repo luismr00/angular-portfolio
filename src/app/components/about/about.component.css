@@ -1,0 +1,169 @@
+/* About */
+
+.about {
+    /* background-color: #181818; */
+    /* height: 100vh; */
+    margin-top: 15px;
+    color: white;
+}
+
+.content {
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+hr {
+    width: 80px;
+    display: inline-block;
+    margin: 0 15px 4px 15px;
+}
+
+.content-header {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 21px;
+}
+
+.content-header h1 {
+    /* display: inline-block; */
+    font-size: 36px;
+}
+
+.about-description-1, .about-description-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-description-2 {
+    flex-direction: row-reverse;
+}
+
+.about-text, .about-image {
+    /* flex: 1 1 0px; */
+    font-size: 18px;
+}
+
+.about-text {
+    background: #1E1E1E;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.about-text p {
+    padding: 40px;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image-1 {
+    width: 500px;
+    height: 345px;
+}
+
+.about-image-2 {
+    width: 500px;
+    height: 345px;
+}
+
+.about-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .content {
+        width: 100%;
+    } */
+    .about-image-1 {
+        width: 600px;
+        height: 445px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+    }
+    
+    .about-image-2 {
+        width: 600px;
+        height: 445px;
+        border-radius: 3px;
+    }
+
+    .about-text {
+        width: 600px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .content-header {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* .content {
+        width: 100%;
+    } */
+    .about-image-1 {
+        width: 400px;
+        height: 245px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+    }
+    
+    .about-image-2 {
+        width: 400px;
+        height: 245px;
+        border-radius: 3px;
+    }
+
+    .about-text {
+        width: 400px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* .content {
+        width: 100%;
+    } */
+    .about-image-1 {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+    }
+    
+    .about-image-2 {
+        width: 300px;
+        height: 200px;
+        border-radius: 3px;
+    }
+
+    .about-text {
+        width: 300px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Animation for revealing components */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

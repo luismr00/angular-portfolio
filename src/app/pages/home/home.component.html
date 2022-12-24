@@ -1,156 +1,32 @@
-<div>
-    <div class="intro">
-        <app-header></app-header>
+<div class="home">
+    <app-intro></app-intro>
+    <app-about></app-about>
+    <div class="skills reveal" id="skills">
         <div class="content">
-            <!-- <p>home works!</p>
-            <a href="/project">Checkout project</a> -->
-            <div class="row">
-                <div class="headshot">
-                    <!-- <p>image here!</p> -->
-                    <img src="assets/luis.png">
+            <div class="content-header">
+                <!-- <hr> -->
+                <h1>Skills</h1>
+                <!-- <hr> -->
+                <div class="content-header-text">
+                    <p>
+                        These percentages summarize my overall skills that can be found under my resume.
+                        My proficiency is highest over fullstack as opposed to other languages such as C, C++, Java, Ruby, etc.
+                        That is because I've been focusing more on developing my frontend and backend skills, but I can always pick up any previous or new language if the occasion arises.
+                        <!-- Overall, it should just take me a couple of weeks to get used to any other programming languages since most them are very similar to each other. -->
+                    </p>
                 </div>
-                <div class="intro-text">
-                    <p>Hi, my name is</p>
-                    <h1 [ngStyle]="{'margin': '-20px 20px -20px 0'}">LUIS</h1>
-                    <h1>RANGEL</h1>
-                    <p>I am a Software Engineer specialized in building applications for the web along other things.</p>
-                </div>
+            </div>
+            
+            <div class="skill-list" *ngIf="showSkills; else showStats">
+                <app-skills *ngFor="let skill of skills" [id]="skill.id" [percent]="skill.percent" [specialty]="skill.specialty" [mastery]="skill.mastery" [showMore]="showMore"></app-skills>
             </div>
         </div>
     </div>
-    <div class="about">
-        <div class="content">
-            <div class="content-header">
-                <!-- // html example -->
-                <hr>
-                <!-- <p>&#x2015;&#x2015;&#x2015; <span>About</span> &#x2015;&#x2015;&#x2015;</p> -->
-                <h3>About</h3>
-                <hr>
-            </div>
-            <div class="about-description">
-                <div class="about-left">
-                    <div class="about-text">
-                        <p>Hi, my name is Luis, and I am a recent Computer Science graduate from California State University Northridge and also a veteran from the U.S. Navy. 
-                            My service in the military consisted of working in patient care as the rate or title of a Hospital Corpsman (2012 - 2017). 
-                            While performing my duties in the medical field, I later realized I wanted to work with computers instead. 
-                            Changing jobs in the Navy to something computer related was rather difficult, so I decided to finish my service honorably and went back to school to pursue Computer Science once my contract ended.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-right">
-                    <!-- <div class="about-image-1"> -->
-                        <img class="about-image-1" src="assets/navy.jpg">
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div class="about-description">
-                <div class="about-left">
-                    <!-- <div class="about-image-2"> -->
-                        <img class="about-image-2" src="assets/california.JPG">
-                    <!-- </div> -->
-                </div>  
-                <div class="about-right">
-                    <div class="about-text">
-                        <p>Upon leaving the service, I decided to move to Los Angeles instead of my original hometown of Chicago to go to school.
-                            There, I first started attending school in Los Angeles City College and later transferred to CSUN to pursue my Bachelor’s Degree. 
-                            It took my 5 years to finish my degree, but I managed to finish in the end and learned a lot during my time in college. 
-                            Plus, I also managed to get summer internship in 2021 over with Snapchat. 
-                            There I learned more about full stack and app development along creating other things such as lenses. 
-                            <!-- Overall, I can say I’ve gained enough experience and confidence to build about anything and can’t wait to start my new journey as Software Engineer over the following years. -->
-                        </p>
-                    </div>
-                </div>  
-            </div>
-        </div>
-    </div>
-    <div class="skills">
-        <div class="content">
-            <div class="content-header">
-                <hr>
-                <h3>Skills</h3>
-                <hr>
-            </div>
-            <div class="skill-list">
-                <!-- <p>{{skills}}</p> -->
-                <app-skills *ngFor="let skill of skills" [percent]="skill.percent" [language]="skill.language" [mastery]="skill.mastery"></app-skills>
-                <!-- <app-work *ngFor="let greet of greetings" [text]="greet"></app-work> -->
-            </div>
-        </div>
-    </div>
-    <div class="work">
-        <div class="content">
-            <div class="content-header">
-                <hr>
-                <h3>Work</h3>
-                <hr>
-            </div>  
-            <p>The following are some of the projects I’ve worked with in the past but not all. Some of them you can find a live view over the web while other projects remain in development mode and can only be launched with an IDE compiler. For more information any other projects, visit my GitHub link shown under contacts.</p>
-            <div class="projects">
-                <div class="project">
-                    <div class="project-image">
-                        <img class="about-image-1" src="assets/BloggerView.jpeg">
-                    </div>  
-                    <div class="project-text">
-                        <p>Upon leaving the service, I decided to move to Los Angeles instead of my original hometown of Chicago to go to school.
-                            There, I first started attending school in Los Angeles City College and later transferred to CSUN to pursue my Bachelor’s Degree. 
-                            It took my 5 years to finish my degree, but I managed to finish in the end and learned a lot during my time in college. 
-                            Plus, I also managed to get summer internship in 2021 over with Snapchat. 
-                            There I learned more about full stack and app development along creating other things such as lenses. 
-                            <!-- Overall, I can say I’ve gained enough experience and confidence to build about anything and can’t wait to start my new journey as Software Engineer over the following years. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img class="about-image-1" src="assets/AdidasView.jpeg">
-                    </div>
-                    <div class="project-text">
-                        <p>Upon leaving the service, I decided to move to Los Angeles instead of my original hometown of Chicago to go to school.
-                            There, I first started attending school in Los Angeles City College and later transferred to CSUN to pursue my Bachelor’s Degree. 
-                            It took my 5 years to finish my degree, but I managed to finish in the end and learned a lot during my time in college. 
-                            Plus, I also managed to get summer internship in 2021 over with Snapchat. 
-                            There I learned more about full stack and app development along creating other things such as lenses. 
-                            <!-- Overall, I can say I’ve gained enough experience and confidence to build about anything and can’t wait to start my new journey as Software Engineer over the following years. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <div class="snap-image">
-                            <img class="snap-logo" src="assets/snapLogo.png">
-                        </div>
-                    </div>
-                    <div class="project-text">
-                        <p>Upon leaving the service, I decided to move to Los Angeles instead of my original hometown of Chicago to go to school.
-                            There, I first started attending school in Los Angeles City College and later transferred to CSUN to pursue my Bachelor’s Degree. 
-                            It took my 5 years to finish my degree, but I managed to finish in the end and learned a lot during my time in college. 
-                            Plus, I also managed to get summer internship in 2021 over with Snapchat. 
-                            There I learned more about full stack and app development along creating other things such as lenses. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div class="contact">
-        <div class="content">
-            <div class="content-header">
-                <hr>
-                <h3>Contact</h3>
-                <hr>
-            </div>  
-            <div class="contact-text">
-                <h1>Get In Touch</h1>
-                <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-            </div>
-            <div class="contact-icons">
-                <img class="icon" src="assets/email-icon.png">
-                <img class="icon" src="assets/github-icon.png">
-                <img class="icon" src="assets/linkedin-icon.png">
-            </div>
-        </div>  
-    </div>
-    <div class="footer">
-        <p>Copyright 2022 - Luis Rangel</p>
-    </div>
+    <app-work></app-work>
+    <app-contact></app-contact>
 </div>
+
+<ng-template #showStats>
+    <app-stats [goBack]="goBack" [stats]="stats"></app-stats>
+    <!-- <button class="more" (click)="goBack()">Back</button> -->
+</ng-template>

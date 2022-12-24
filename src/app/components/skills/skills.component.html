@@ -1,14 +1,19 @@
 <div class="skill">
   <circle-progress
     [percent]="percent"
-    [title]="language"
+    [title]="specialty"
     [subtitle]="mastery"
     [outerStrokeWidth]="16"
     [innerStrokeWidth]="0"
     [animation]="true"
     [animationDuration]="300"
   ></circle-progress>
+  <button class="more" (click)="showMore(id)">Learn More</button>
 </div>
+
+<!-- <ng-template #showStats>
+  <button class="more" (click)="showMore(id)">Back</button>
+</ng-template> -->
 
 <!-- [outerStrokeColor]="'#78C000'"
   [radius]="100"
