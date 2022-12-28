@@ -195,6 +195,7 @@ hr {
         border-radius: 15px;
         width: 600px;
         margin: 0 auto;
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
     }
 
     .content-header-text p {
@@ -208,6 +209,10 @@ hr {
         height: 275px;
         border-radius: 15px;
         margin-bottom: 20px;
+    }
+
+    .project-text-container {
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
     }
 }
 
@@ -256,7 +261,7 @@ hr {
     }
 
     .content-header {
-        padding-top: 0;
+        /* padding-top: 0; */
     }
 }
 
@@ -264,6 +269,10 @@ hr {
     /* .content {
         width: 100%;
     } */
+    p {
+        font-size: 16px;
+    }
+
     .project-image {
         width: 300px;
         height: 200px;

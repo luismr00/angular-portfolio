@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Linden+Hill&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    /* background: #6665ee; */
+}
+
+/* .info span {
+    color: #000;
+} */
+
+.skills-bar {
+    width: 600px;
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    /* padding: 25px 30px; */
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
+}
+
+.skills-bar .bar {
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0;
+}
+
+.skills-bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                      0 1px rgba(225,225,225,0.8); */
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    /* width: 80%; */
+    /* background: #6665ee; */
+    background-color: #48B500;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* .progress-line.html span {
+    width: 99%;
+}
+
+.progress-line.css span {
+    width: 90%;
+}
+
+.progress-line.javascript span {
+    width: 92%;
+} */
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    /* content: "80%"; */
+    content: attr(percent);
+    right: 0;
+    top: -25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;   
+    padding: 1px 8px;
+    border-radius: 3px;
+    animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .progress-line.html span::after {
+    content: "99%";
+}
+
+.bar .progress-line.css span::after {
+    content: "90%";
+}
+
+.progress-line.javascript span::after {
+    content: "92%";
+} */
+
+@media screen and (max-width: 1000px) { 
+    .skills-bar {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills-bar {
+        width: 250px;
+    }
+}

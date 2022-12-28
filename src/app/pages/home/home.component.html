@@ -23,10 +23,19 @@
         </div>
     </div>
     <app-work></app-work>
+    <app-subwork></app-subwork>
     <app-contact></app-contact>
 </div>
 
 <ng-template #showStats>
-    <app-stats [goBack]="goBack" [stats]="stats"></app-stats>
-    <!-- <button class="more" (click)="goBack()">Back</button> -->
+    <!-- <app-skills [id]="1" [percent]="99" [specialty]="frontend" [mastery]="99%" [showMore]="showMore"></app-skills> -->
+    <div class="stats-info">
+        <!-- <p>WHEEL</p> -->
+        <div class="pie-chart">
+            <app-skills [id]="stats.id" [percent]="stats.percent" [specialty]="stats.specialty" [mastery]="stats.mastery" [showMore]="showMore" [hideMore]="hideMore" [goBack]="goBack"></app-skills>
+            <button class="more largeView" *ngIf="hideMore" (click)="goBack()">Back</button>
+        </div>
+        <app-stats [goBack]="goBack" [stats]="stats"></app-stats>
+        <button class="more smallView" *ngIf="hideMore" (click)="goBack()">Back</button>
+    </div>
 </ng-template>

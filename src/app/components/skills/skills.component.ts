@@ -16,7 +16,9 @@ export class SkillsComponent implements OnInit {
   @Input() specialty = '';
   @Input() mastery = '';
   @Input() percent = 0;
+  @Input() hideMore: boolean = false;
   @Input() showMore!: (args: number) => void;
+  @Input() goBack!: () => void;
 
   constructor() {}
 

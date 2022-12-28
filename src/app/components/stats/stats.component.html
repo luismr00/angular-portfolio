@@ -1,5 +1,35 @@
-<div>
+<!-- <div>
     <p>Some Languages:</p>
     <p>{{stats.specialty}}</p>
     <button class="more" (click)="goBack()">Back</button>
+</div> -->
+
+
+<div class="skills-bar">
+    <!-- <div class="bar">
+        <div class="info">
+            <span>HTML</span>
+        </div>
+        <div class="progress-line html">
+            <span></span>
+        </div>
+    </div> -->
+    <div class="bar" *ngFor="let statistic of stats.stats">
+        <div class="info">
+            <span [ngStyle]="{'color': 'white'}">{{statistic.language}}</span>
+        </div>
+        <div class="progress-line">
+            <!-- <span [ngStyle]="{'width': '90%'}" percent="90%"></span> -->
+            <span [ngStyle]="{'width': statistic.percent}" [attr.percent]="statistic.percent"></span>
+            <!-- <span>SKILL</span> -->
+        </div>
+    </div>
+    <!-- <div class="bar">
+        <div class="info">
+            <span>JavaScript</span>
+        </div>
+        <div class="progress-line javascript">
+            <span></span>
+        </div>
+    </div> -->
 </div>

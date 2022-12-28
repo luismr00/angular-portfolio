@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Skill } from 'src/app/Skill';
 
 @Component({
@@ -6,7 +6,13 @@ import { Skill } from 'src/app/Skill';
   templateUrl: './stats.component.html',
   styleUrls: ['./stats.component.css']
 })
-export class StatsComponent {
+export class StatsComponent implements OnInit {
   @Input() goBack!: () => void;
   @Input() stats!: Skill;
+
+  constructor() {}
+
+  ngOnInit(): void {
+    console.log(this.stats);
+  }
 }

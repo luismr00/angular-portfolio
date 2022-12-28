@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit{
   skills: Skill[] = SKILLS;
   showSkills: boolean = true;
   stats!: Skill;
-
+  hideMore: boolean = true;
 
   constructor() {}
 

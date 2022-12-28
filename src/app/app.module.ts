@@ -14,6 +14,10 @@ import { SkillsComponent } from './components/skills/skills.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { StatsComponent } from './components/stats/stats.component';
+import { SubworkComponent } from './components/subwork/subwork.component';
+import { SnapComponent } from './pages/snap/snap.component';
+import { BloggerComponent } from './pages/blogger/blogger.component';
+import { AdidasComponent } from './pages/adidas/adidas.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { StatsComponent } from './components/stats/stats.component';
     ContactComponent,
     HeaderComponent,
     SkillsComponent,
-    StatsComponent
+    StatsComponent,
+    SubworkComponent,
+    SnapComponent,
+    BloggerComponent,
+    AdidasComponent
   ],
   imports: [
     BrowserModule,

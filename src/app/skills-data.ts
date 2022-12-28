@@ -5,19 +5,101 @@ export const SKILLS: Skill[] = [
         id: 0,
         percent: 95,
         specialty: "FRONTEND",
-        mastery: "95%"
+        mastery: "95%",
+        stats: [
+            {
+                language: "HTML",
+                percent: "99%"
+            },
+            {
+                language: "CSS",
+                percent: "92%"
+            },
+            {
+                language: "JavaScript",
+                percent: "95%"
+            },
+            {
+                language: "React",
+                percent: "90%"
+            },
+            {
+                language: "React Native",
+                percent: "85%"
+            },
+            {
+                language: "Angular",
+                percent: "75%"
+            },
+            {
+                language: "Laravel",
+                percent: "75%"
+            }
+        ]
     },
     {
         id: 1,
         percent: 80,
         specialty: "BACKEND",
-        mastery: "80%"
+        mastery: "80%",
+        stats: [
+            {
+                language: "Node",
+                percent: "85%"
+            },
+            {
+                language: "Express",
+                percent: "85%"
+            },
+            {
+                language: "MySQL",
+                percent: "90%"
+            },
+            {
+                language: "MongoDB",
+                percent: "75%"
+            },
+            {
+                language: "Firebase",
+                percent: "75%"
+            },
+            {
+                language: ".NET",
+                percent: "50%"
+            }
+        ]
     },
     {
         id: 2,
         percent: 70,
         specialty: "OTHER",
-        mastery: "70%"
+        mastery: "70%",
+        stats: [
+            {
+                language: "C",
+                percent: "70%"
+            },
+            {
+                language: "C++",
+                percent: "70%"
+            },
+            {
+                language: "Java",
+                percent: "70%"
+            },
+            {
+                language: "Ruby",
+                percent: "65%"
+            },
+            {
+                language: "Racket",
+                percent:"70%"
+            },
+            {
+                language: "Prolog",
+                percent: "60%"
+            },
+        ]
     },
     
     // {

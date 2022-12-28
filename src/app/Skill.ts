@@ -3,5 +3,14 @@ export interface Skill {
     percent: number;
     specialty: string;
     mastery: string;
-    // [languages:number]:string;
+    stats: Stats[];
 }
+
+interface Stats {
+    language: string;
+    percent: string;
+}
+
+// interface Languages {
+//     [index: number]: string;
+// }
