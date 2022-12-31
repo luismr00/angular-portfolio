@@ -94,7 +94,7 @@ img {
     color: black
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     img {
         width: 600px;
         height: 300px;
@@ -109,7 +109,7 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .title {
         font-size: 36px;
@@ -141,7 +141,7 @@ img {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     .title {
         font-size: 28px;

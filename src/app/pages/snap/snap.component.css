@@ -121,7 +121,7 @@ img {
     color: black
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .project {
         /* flex-direction: column; */
         width: 600px;
@@ -172,7 +172,7 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .project {
         margin: 30px auto;
         flex-direction: column;
