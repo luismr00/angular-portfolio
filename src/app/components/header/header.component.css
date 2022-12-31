@@ -62,8 +62,9 @@
     cursor: pointer;
 }
 
-.logo h1 {
-    font-size: 21px;
+.logo h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 26px;
 }
 
 /* .logo:hover {
