@@ -3,9 +3,9 @@ import { Skill } from "./Skill";
 export const SKILLS: Skill[] = [
     {
         id: 0,
-        percent: 95,
+        percent: 80,
         specialty: "FRONTEND",
-        mastery: "95%",
+        mastery: "80%",
         stats: [
             {
                 language: "HTML",
@@ -20,6 +20,10 @@ export const SKILLS: Skill[] = [
                 percent: "95%"
             },
             {
+                language: "Typescript",
+                percent: "50%"
+            },
+            {
                 language: "React",
                 percent: "90%"
             },
@@ -28,8 +32,12 @@ export const SKILLS: Skill[] = [
                 percent: "85%"
             },
             {
+                language: "Redux",
+                percent: "60%"
+            },
+            {
                 language: "Angular",
-                percent: "75%"
+                percent: "77%"
             },
             {
                 language: "Laravel",
@@ -39,9 +47,9 @@ export const SKILLS: Skill[] = [
     },
     {
         id: 1,
-        percent: 80,
+        percent: 69,
         specialty: "BACKEND",
-        mastery: "80%",
+        mastery: "69%",
         stats: [
             {
                 language: "Node",
@@ -66,18 +74,22 @@ export const SKILLS: Skill[] = [
             {
                 language: ".NET",
                 percent: "50%"
+            },
+            {
+                language: "AWS",
+                percent: "20%"
             }
         ]
     },
     {
         id: 2,
-        percent: 70,
+        percent: 68,
         specialty: "OTHER",
-        mastery: "70%",
+        mastery: "68%",
         stats: [
             {
                 language: "C",
-                percent: "70%"
+                percent: "65%"
             },
             {
                 language: "C++",
@@ -90,14 +102,6 @@ export const SKILLS: Skill[] = [
             {
                 language: "Ruby",
                 percent: "65%"
-            },
-            {
-                language: "Racket",
-                percent:"70%"
-            },
-            {
-                language: "Prolog",
-                percent: "60%"
             },
         ]
     },

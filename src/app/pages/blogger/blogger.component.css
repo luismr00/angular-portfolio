@@ -22,8 +22,13 @@ li {
 }
 
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: inherit;
+}
+
+b {
+    font-size: 18px;
+    text-align: left;
 }
 
 a:visited { 
@@ -31,7 +36,8 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: bold;
 }
 
 .reverse {
