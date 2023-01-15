@@ -47,9 +47,9 @@ export const SKILLS: Skill[] = [
     },
     {
         id: 1,
-        percent: 69,
+        percent: 70,
         specialty: "BACKEND",
-        mastery: "69%",
+        mastery: "70%",
         stats: [
             {
                 language: "Node",
@@ -77,15 +77,15 @@ export const SKILLS: Skill[] = [
             },
             {
                 language: "AWS",
-                percent: "20%"
+                percent: "30%"
             }
         ]
     },
     {
         id: 2,
-        percent: 68,
+        percent: 72,
         specialty: "OTHER",
-        mastery: "68%",
+        mastery: "72%",
         stats: [
             {
                 language: "C",
@@ -103,6 +103,14 @@ export const SKILLS: Skill[] = [
                 language: "Ruby",
                 percent: "65%"
             },
+            {
+                language: "Photoshop",
+                percent: "80%"
+            },
+            {
+                language: "Illustrator",
+                percent: "80%"
+            }
         ]
     },
     
