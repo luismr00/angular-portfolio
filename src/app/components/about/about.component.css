@@ -1,14 +1,11 @@
 /* About */
 
 .about {
-    /* background-color: #181818; */
-    /* height: 100vh; */
     margin-top: 15px;
     color: white;
 }
 
 .content {
-    /* width: 80%; */
     margin: 0 auto;
 }
 
@@ -25,7 +22,6 @@ hr {
 }
 
 .content-header h1 {
-    /* display: inline-block; */
     font-size: 36px;
 }
 
@@ -40,7 +36,6 @@ hr {
 }
 
 .about-text, .about-image {
-    /* flex: 1 1 0px; */
     font-size: 18px;
 }
 
@@ -52,7 +47,7 @@ hr {
 }
 
 .about-text p {
-    padding: 40px;
+    padding: 30px;
 }
 
 .about-image {
@@ -79,6 +74,158 @@ hr {
     justify-content: flex-end;
 }
 
+/* Base setup for the timeline */
+.timeline {
+    position: relative;
+    width: 1000px; /* Adjust based on your content needs */
+    margin: 40px auto;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    bottom: -30px;
+    width: 4px;
+    background-color: white;
+    z-index: 1;
+}
+
+/* General settings for items */
+.timeline-item {
+    width: 50%; /* Half width to fit on either side */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Positioning for left items */
+.timeline-item.left {
+    justify-content: flex-end; /* Align content to the right side */
+    padding-right: 30px; /* Spacing from the central line */
+}
+
+/* Positioning for right items */
+.timeline-item.right {
+    justify-content: flex-start; /* Align content to the left side */
+    left: 50%; /* Shift base position to middle */
+}
+
+/* Dot styles */
+.timeline-dot-left {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    transform: translateX(65%);
+    top: 0px; /* Adjust based on your design */
+}
+
+.timeline-dot-right {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    transform: translateX(-30%);
+    top: 0px; /* Adjust based on your design */
+}
+
+/* Text styling within timeline items */
+/* .about-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+} */
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 600px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+}
+
+.about-text h3 {
+    color: white;
+    margin-top: 30px;
+
+}
+
+.about-text p.date {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Responsive timeline styles */
+.responsive-timeline {
+    display: none; /* Hide by default */
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-line {
+    border-left: 4px solid white;
+    height: 100%; /* Adjust based on your content needs */
+
+}
+
+.responsive-timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -8px; /* Adjust based on your design */
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.responsive-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.responsive-item {
+    margin-bottom: 20px; /* Space between items */
+}
+
+/* .responsive-items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+} */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1000px) {
+    .timeline {
+        display: none; /* Hide the original timeline */
+    }
+
+    .responsive-timeline {
+        display: flex; /* Show the responsive timeline */
+        justify-content: center;
+    }
+}
+
 @media screen and (max-height: 500px) {
     .about {
         margin-top: 200px;
@@ -86,9 +233,6 @@ hr {
 }
 
 @media screen and (max-width: 1100px) {
-    /* .content {
-        width: 100%;
-    } */
     .about-image-1 {
         width: 600px;
         height: 445px;
@@ -102,22 +246,12 @@ hr {
         border-radius: 3px;
     }
 
-    .about-text {
-        width: 600px;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
-    }
-
     .content-header {
         padding-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 750px) {
-    /* .content {
-        width: 100%;
-    } */
     .about-image-1 {
         width: 400px;
         height: 245px;
@@ -139,9 +273,6 @@ hr {
 }
 
 @media screen and (max-width: 550px) {
-    /* .content {
-        width: 100%;
-    } */
     .about-image-1 {
         width: 300px;
         height: 200px;
@@ -162,7 +293,7 @@ hr {
     }
 }
 
-/* Animation for revealing components */
+/* Animations */
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -172,5 +303,24 @@ hr {
 
 .reveal.active{
     transform: translateY(0);
+    opacity: 1;
+}
+
+/* Directional animations for timeline items */
+.timeline-item .content-animate {
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.timeline-item.left .content-animate {
+    transform: translateX(50px); /* Start from right moving left */
+}
+
+.timeline-item.right .content-animate {
+    transform: translateX(-50px); /* Start from left moving right */
+}
+
+.timeline-item .content-animate.active {
+    transform: translateX(0);
     opacity: 1;
 }

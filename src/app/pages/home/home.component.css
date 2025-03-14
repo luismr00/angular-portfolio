@@ -32,6 +32,17 @@
     text-align: center;
 }
 
+.content-header ul {
+    list-style-position: inside; /* Align bullet points with the text */
+    padding: 0 75px; /* Remove default padding */
+    text-align: justify; /* Center the text */
+}
+
+.content-header li {
+    font-size: 20px;
+    text-align: justify; /* Center the text */
+}
+
 hr {
     width: 80px;
     display: inline-block;
@@ -123,6 +134,15 @@ hr {
         text-align: left;
         font-size: 18px;
         padding: 40px;
+        margin: 0;
+    }
+
+    .content-header ul {
+        margin: 0;
+    }
+
+    .content-header li {
+        font-size: 18px;
     }
 
     .skill-list {

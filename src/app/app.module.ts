@@ -18,6 +18,7 @@ import { SubworkComponent } from './components/subwork/subwork.component';
 import { SnapComponent } from './pages/snap/snap.component';
 import { BloggerComponent } from './pages/blogger/blogger.component';
 import { AdidasComponent } from './pages/adidas/adidas.component';
+import { MeleeComponent } from './pages/melee/melee.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AdidasComponent } from './pages/adidas/adidas.component';
     SubworkComponent,
     SnapComponent,
     BloggerComponent,
-    AdidasComponent
+    AdidasComponent,
+    MeleeComponent
   ],
   imports: [
     BrowserModule,

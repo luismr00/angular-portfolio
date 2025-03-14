@@ -1,46 +1,36 @@
 <div class="about reveal" id="about">
     <div class="content">
         <div class="content-header">
-            <!-- // html example -->
-            <!-- <hr> -->
-            <!-- <p>&#x2015;&#x2015;&#x2015; <span>About</span> &#x2015;&#x2015;&#x2015;</p> -->
             <h1>About Me</h1>
-            <!-- <hr> -->
         </div>
-        <div class="about-description-1">
-            <div class="about-left">
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div *ngFor="let item of timelineItems" class="timeline-item {{item.position}} reveal">
+                <div class="timeline-dot-{{item.position}}"></div>
                 <div class="about-text">
-                    <p>
-                        Hello, I'm Luis, a recent Computer Science graduate from California State University Northridge and a U.S. Navy veteran. 
-                        During my military service from 2012 to 2017, I worked in patient care as a Hospital Corpsman. 
-                        However, I discovered my passion for computers and decided to transition into the field. 
-                        Despite the challenges of changing career paths within the Navy, I chose to complete my service honorably and pursue a degree in Computer Science after my contract ended.
-                    </p>
+                  <h3 class="title">{{item.title}}</h3>
+                  <p class="date">{{item.date}}</p>
+                  <p class="description">{{item.description}}</p>
+                </div>
+              </div>
+        </div>
+
+        <!-- New responsive timeline -->
+        <div class="responsive-timeline">
+            <div class="responsive-content-center">
+                <div class="responsive-line"></div>
+                <div class="responsive-items">
+                    <div *ngFor="let item of timelineItems" class="responsive-item reveal">
+                        <div class="responsive-timeline-dot"></div> <!-- New dot -->
+                        <div class="about-text">
+                            <h3 class="title">{{item.title}}</h3>
+                            <p class="date">{{item.date}}</p>
+                            <p class="description">{{item.description}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="about-right">
-                <!-- <div class="about-image-1"> -->
-                    <img class="about-image-1" src="assets/navy.jpg">
-                <!-- </div> -->
-            </div>
-        </div>
-        <div class="about-description-2">
-            <div class="about-left">
-                <div class="about-text">
-                    <p>
-                        After leaving the military, I opted to move to Los Angeles instead of my hometown of Chicago to attend school. 
-                        I initially enrolled at Los Angeles City College before transferring to CSUN to earn my Bachelor’s Degree. 
-                        Although it took me five years to complete my degree, the journey was rewarding, and I gained invaluable knowledge during my time in college. 
-                        Additionally, I had the opportunity to intern at Snapchat in 2021, where I delved into full-stack and app development, including creating lenses and exploring various aspects of software development.
-                        <!-- Overall, I can say I’ve gained enough experience and confidence to build about anything and can’t wait to start my new journey as Software Engineer over the following years. -->
-                    </p>
-                </div>
-            </div>  
-            <div class="about-right">
-                <!-- <div class="about-image-2"> -->
-                    <img class="about-image-2" src="assets/california.JPG">
-                <!-- </div> -->
-            </div>  
         </div>
     </div>
 </div>

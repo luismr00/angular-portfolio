@@ -9,7 +9,7 @@ export const SKILLS: Skill[] = [
         stats: [
             {
                 language: "HTML",
-                percent: "99%"
+                percent: "95%"
             },
             {
                 language: "CSS",
@@ -49,19 +49,19 @@ export const SKILLS: Skill[] = [
         id: 1,
         percent: 70,
         specialty: "BACKEND",
-        mastery: "74%",
+        mastery: "79%",
         stats: [
             {
                 language: "Node",
-                percent: "75%"
+                percent: "85%"
             },
             {
                 language: "Express",
-                percent: "75%"
+                percent: "85%"
             },
             {
                 language: "RESTful APIs",
-                percent: "70%"
+                percent: "80%"
             },
             {
                 language: "MySQL",
@@ -74,98 +74,71 @@ export const SKILLS: Skill[] = [
             {
                 language: "Firebase",
                 percent: "75%"
+            },
+            {
+                language: "C#",
+                percent: "80%"
+            },
+            {
+                language: "ASP .NET",
+                percent: "80%"
+            },
+            {
+                language: "Entity Framework Core",
+                percent: "80%"
             }
-            // {
-            //     language: ".NET",
-            //     percent: "50%"
-            // },
-            // {
-            //     language: "AWS",
-            //     percent: "30%"
-            // }
         ]
     },
     {
         id: 2,
         percent: 72,
-        specialty: "OTHER",
-        mastery: "72%",
+        specialty: "CLOUD",
+        mastery: "68%",
         stats: [
             {
-                language: "C",
-                percent: "70%"
+                language: "AWS (ECS)",
+                percent: "50%"
             },
             {
-                language: "C++",
-                percent: "70%"
-            },
-            {
-                language: "Java",
-                percent: "70%"
-            },
-            {
-                language: "Python",
-                percent: "70%"
-            },
-            {
-                language: "Photoshop",
+                language: "AWS Lambda",
                 percent: "75%"
             },
             {
-                language: "Figma",
+                language: "AWS S3",
                 percent: "75%"
+            },
+            {
+                language: "AWS API Gateway",
+                percent: "75%"
+            },
+            {
+                language: "AWS DynamoDB",
+                percent: "75%"
+            },
+            {
+                language: "AWS Cognito",
+                percent: "75%"
+            },
+            {
+                language: "Azure (AKS)",
+                percent: "50%"
+            },
+            {
+                language: "Azure Functions",
+                percent: "70%"
+            },
+            {
+                language: "Azure Blob Storage",
+                percent: "70%"
+            },
+            {
+                language: "Azure App Services",
+                percent: "70%"
+            },
+            {
+                language: "Azure Key Vault",
+                percent: "70%"
             }
         ]
     },
-    
-    // {
-    //     percent: 95,
-    //     language: "HTML/CSS",
-    //     mastery: "99%"
-    // },
-    // {
-    //     percent: 95,
-    //     language: "JAVASCRIPT",
-    //     mastery: "95%"
-    // },
-    // {
-    //     percent: 95,
-    //     language: "REACT",
-    //     mastery: "95%"
-    // },
-    // {
-    //     percent: 88,
-    //     language: "REACT NATIVE",
-    //     mastery: "88%"
-    // },
-    // {
-    //     percent: 70,
-    //     language: "ANGULAR",
-    //     mastery: "75%"
-    // },
-    // {
-    //     percent: 70,
-    //     language: "LARAVEL",
-    //     mastery: "75%"
-    // },
-    // {
-    //     percent: 90,
-    //     language: "NODE",
-    //     mastery: "90%"
-    // },
-    // {
-    //     percent: 90,
-    //     language: "EXPRESS",
-    //     mastery: "90%"
-    // },
-    // {
-    //     percent: 90,
-    //     language: "MYSQL",
-    //     mastery: "90%"
-    // },
-    // {
-    //     percent: 70,
-    //     language: "MONGODB",
-    //     mastery: "70%"
-    // },
 ];

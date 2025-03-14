@@ -1,0 +1,165 @@
+.project-container {
+    color: white;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 25px auto;
+    justify-content: space-between;
+}
+
+a {
+    /* text-decoration: none; */
+    color: inherit;
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.reverse {
+    /* flex-direction: row-reverse; */
+}
+
+.description {
+    width: 1000px;
+    /* height: 500px; */
+}
+
+img {
+    margin-top: 25px;
+}
+
+.description-container {
+    padding: 30px 40px;
+    /* height: 500px; */
+    /* margin-bottom: 25px; */
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+    /* align-items: center; */
+}
+
+.description h1 {
+    font-size: 28px;
+}
+
+.description p {
+    text-align: left;
+    font-size: 22px;
+}
+
+.description-container, .project img {
+    /* margin: 0 25px; */
+}
+
+img {
+    width: 1000px;
+    height: 500px;
+    /* border-radius: 3px; */
+}
+
+.back {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: white;
+    color: black
+}
+
+@media screen and (max-width: 1100px) {
+    img {
+        width: 600px;
+        height: 300px;
+    }
+
+    .project {
+        width: 600px;
+    }
+
+    .description {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description h1 {
+        font-size: 22px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .project {
+        width: 400px;
+    }
+
+    .description {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .project {
+        width: 300px;
+    }
+
+    .description {
+        width: 300px;
+    }
+}
