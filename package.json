@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "aws-deploy": "aws s3 sync dist/angular-portfolio/ s3://luismrangel.com"
+    "aws-deploy": "aws s3 sync dist/angular-portfolio/ s3://luismrangel.com --cache-control 'max-age=0, no-cache, no-store, must-revalidate'"
   },
   "private": true,
   "dependencies": {
