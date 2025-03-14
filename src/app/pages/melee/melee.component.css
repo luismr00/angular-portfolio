@@ -64,6 +64,11 @@ img {
     font-size: 22px;
 }
 
+ul, li {
+    font-size: 22px;
+    text-align: left;
+}
+
 .description-container, .project img {
     /* margin: 0 25px; */
 }
@@ -121,6 +126,10 @@ img {
         font-size: 18px;
     }
 
+    ul, li {
+        font-size: 18px;
+    }
+
     img {
         width: 400px;
         height: 250px;
@@ -147,6 +156,10 @@ img {
     }
 
     .description p {
+        font-size: 16px;
+    }
+
+    ul, li {
         font-size: 16px;
     }
 
